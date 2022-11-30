@@ -1,15 +1,15 @@
 ---
-- pause:
-    prompt: "{{ item }}"
-  when: not tests|default(false)|bool
-  tags:
-    - skip_ansible_lint
-  with_items: |
-    https://trailofbits.github.io/algo/deploy-to-ubuntu.html
+# - pause:
+#     prompt: "{{ item }}"
+#   when: not tests|default(false)|bool
+#   tags:
+#     - skip_ansible_lint
+#   with_items: |
+#     https://trailofbits.github.io/algo/deploy-to-ubuntu.html
 
-    Local installation might break your server. Use at your own risk.
+#     Local installation might break your server. Use at your own risk.
 
-    Proceed? Press ENTER to continue or CTRL+C and A to abort...
+#     Proceed? Press ENTER to continue or CTRL+C and A to abort...
 
 - pause:
     prompt: |
